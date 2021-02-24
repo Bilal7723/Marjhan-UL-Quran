@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Bilal7723/Marjhan-UL-Quran.git/static/css/main.94c250d4.chunk.css",
+    "main.js": "/Bilal7723/Marjhan-UL-Quran.git/static/js/main.5bf5f077.chunk.js",
+    "main.js.map": "/Bilal7723/Marjhan-UL-Quran.git/static/js/main.5bf5f077.chunk.js.map",
+    "runtime-main.js": "/Bilal7723/Marjhan-UL-Quran.git/static/js/runtime-main.7dcecfcf.js",
+    "runtime-main.js.map": "/Bilal7723/Marjhan-UL-Quran.git/static/js/runtime-main.7dcecfcf.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/Bilal7723/Marjhan-UL-Quran.git/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.85f00583.chunk.js": "/Bilal7723/Marjhan-UL-Quran.git/static/js/2.85f00583.chunk.js",
+    "static/js/2.85f00583.chunk.js.map": "/Bilal7723/Marjhan-UL-Quran.git/static/js/2.85f00583.chunk.js.map",
+    "static/js/3.daff19b8.chunk.js": "/Bilal7723/Marjhan-UL-Quran.git/static/js/3.daff19b8.chunk.js",
+    "static/js/3.daff19b8.chunk.js.map": "/Bilal7723/Marjhan-UL-Quran.git/static/js/3.daff19b8.chunk.js.map",
+    "index.html": "/Bilal7723/Marjhan-UL-Quran.git/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/Bilal7723/Marjhan-UL-Quran.git/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.94c250d4.chunk.css.map": "/Bilal7723/Marjhan-UL-Quran.git/static/css/main.94c250d4.chunk.css.map",
+    "static/js/2.85f00583.chunk.js.LICENSE.txt": "/Bilal7723/Marjhan-UL-Quran.git/static/js/2.85f00583.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Bilal7723/Marjhan-UL-Quran.git/static/media/ReemKufi-Regular.20f310fc.ttf",
+    "static/media/TopImg.e2479bd0.jpg": "/Bilal7723/Marjhan-UL-Quran.git/static/media/TopImg.e2479bd0.jpg",
+    "static/media/bottomImg.af8ee1af.jpg": "/Bilal7723/Marjhan-UL-Quran.git/static/media/bottomImg.af8ee1af.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7dcecfcf.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.85f00583.chunk.js",
+    "static/css/main.94c250d4.chunk.css",
+    "static/js/main.5bf5f077.chunk.js"
+  ]
+}
