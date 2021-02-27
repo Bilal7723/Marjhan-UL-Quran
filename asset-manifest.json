@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Marjhan-UL-Quran/static/css/main.f90a1dc7.chunk.css",
-    "main.js": "/Marjhan-UL-Quran/static/js/main.e4565c1e.chunk.js",
-    "main.js.map": "/Marjhan-UL-Quran/static/js/main.e4565c1e.chunk.js.map",
+    "main.js": "/Marjhan-UL-Quran/static/js/main.a1cc2137.chunk.js",
+    "main.js.map": "/Marjhan-UL-Quran/static/js/main.a1cc2137.chunk.js.map",
     "runtime-main.js": "/Marjhan-UL-Quran/static/js/runtime-main.f983b35e.js",
     "runtime-main.js.map": "/Marjhan-UL-Quran/static/js/runtime-main.f983b35e.js.map",
     "static/css/2.1a02f21c.chunk.css": "/Marjhan-UL-Quran/static/css/2.1a02f21c.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.85f00583.chunk.js",
     "static/css/main.f90a1dc7.chunk.css",
-    "static/js/main.e4565c1e.chunk.js"
+    "static/js/main.a1cc2137.chunk.js"
   ]
 }
