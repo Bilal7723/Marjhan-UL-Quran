@@ -13,7 +13,33 @@ function Middiv() {
   const sizeButton = useSelector((state) => state.displayOptButtonReducer.number); //Trans Tab Radio Button
   console.log("From Right>>>"+sizeButton);
   const [selected,setselected] = useState({surah:1,aya:2}); //By Default First Aya Selected
-  const popover_Tooltip = (      
+  const tarjama = "اللہ کے نام سے شروع جو نہایت مہربان ، رحمت والاہے";
+  const tarjamaArray = [
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 2, arabic: "سب تعریفیں اللہ کے لئے ہیں جو تمام جہان والوں کاپالنے والا ہے" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 2, arabic: "بہت مہربان رحمت والا" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 3, arabic: "جزا کے دن کامالک" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 4, arabic: "ہم تیری ہی عبادت کرتے ہیں اور تجھ ہی سے مدد چاہتے ہیں" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 5, arabic: "ہمیں سیدھے راستے پر چلا" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 6, arabic: "ان لوگوں کا راستہ جن پر تو نے احسان کیا" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 7, arabic: "نہ کہ ان کا راستہ جن پر غضب ہوا اور نہ بہکے ہوؤں کا"},
+  ];
+
+  const Array = [
+    {surahName:"سورة الفاتحة",surahNo: 1,aya: 1, arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 2, arabic: "الْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 3, arabic: "الرَّحْمَـٰنِ الرَّحِيمِ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 4, arabic: "مَالِكِ يَوْمِ الدِّينِ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 5, arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 6, arabic: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ" },
+    {surahName:"سورة الفاتحة",surahNo: 1, aya: 7, arabic: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ "},
+    {surahName:"سورة البقرة",surahNo: 2, aya: 1, arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ" },
+    {surahName:"سورة البقرة",surahNo: 2, aya: 2, arabic: "الم" },
+    {surahName:"سورة البقرة",surahNo: 2, aya: 3, arabic: "ذَلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ" },
+    {surahName:"سورة البقرة",surahNo: 2, aya: 4, arabic: "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ" },
+    {surahName:"سورة البقرة",surahNo: 2, aya: 5, arabic: "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنْزِلَ إِلَيْكَ وَمَا أُنْزِلَ مِنْ قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ" },
+    {surahName:"سورة البقرة",surahNo: 2, aya: 6, arabic: "أُولَئِكَ عَلَى هُدًى مِنْ رَبِّهِمْ وَأُولَئِكَ هُمُ الْمُفْلِحُونَ" },
+  ];
+    const popover_Tooltip = (      
   <Popover id="popover-basic">
   <Popover.Title as="h3">
     Translation
@@ -23,42 +49,9 @@ function Middiv() {
     </button>
   </Popover.Title>
   <Popover.Content>
-    And here's some <strong>amazing</strong> content. It's very engaging.
-    right?
+   Translation Coming Soon!!
   </Popover.Content>
 </Popover>);
-  const tarjama = "اللہ کے نام سے شروع جو نہایت مہربان ، رحمت والاہے";
-  const tarjamaArray = [
-    { surah: 1, aya: 1, arabic: "سب تعریفیں اللہ کے لئے ہیں جو تمام جہان والوں کاپالنے والا ہے" },
-    { surah: 1, aya: 2, arabic: "بہت مہربان رحمت والا" },
-    { surah: 1, aya: 3, arabic: "جزا کے دن کامالک" },
-    { surah: 1, aya: 4, arabic: "ہم تیری ہی عبادت کرتے ہیں اور تجھ ہی سے مدد چاہتے ہیں" },
-    { surah: 1, aya: 5, arabic: "ہمیں سیدھے راستے پر چلا" },
-    { surah: 1, aya: 6, arabic: "ان لوگوں کا راستہ جن پر تو نے احسان کیا" },
-    { surah: 1, aya: 7, arabic: "نہ کہ ان کا راستہ جن پر غضب ہوا اور نہ بہکے ہوؤں کا"},
-  ];
-
-  const Array = [
-    {N100:1,surahName:"سورة الفاتحة",surahNo: 1,aya: 1, arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ" },
-    {N100:2,surahName:"سورة الفاتحة",surahNo: 1, aya: 2, arabic: "الْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ" },
-    {N100:3,surahName:"سورة الفاتحة",surahNo: 1, aya: 3, arabic: "الرَّحْمَـٰنِ الرَّحِيمِ" },
-    {N100:4,surahName:"سورة الفاتحة",surahNo: 1, aya: 4, arabic: "مَالِكِ يَوْمِ الدِّينِ" },
-    {N100:5,surahName:"سورة الفاتحة",surahNo: 1, aya: 5, arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ" },
-    {N100:6,surahName:"سورة الفاتحة",surahNo: 1, aya: 6, arabic: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ" },
-    {N100:7,surahName:"سورة الفاتحة",surahNo: 1, aya: 7, arabic: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ "},
-    {N100:8,surahName:"سورة البقرة",surahNo:2,aya: 1, arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ" },
-    {N100:9,surahName:"سورة البقرة",surahNo: 2, aya: 2, arabic: "الم" },
-    {N100:10,surahName:"سورة البقرة",surahNo: 2, aya: 3, arabic: "ذَلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ" },
-    {N100:11,surahName:"سورة البقرة",surahNo: 2, aya: 4, arabic: "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ" },
-    {N100:12,surahName:"سورة البقرة",surahNo: 2, aya: 5, arabic: "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنْزِلَ إِلَيْكَ وَمَا أُنْزِلَ مِنْ قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ" },
-    {N100:13,surahName:"سورة البقرة",surahNo: 2, aya: 6, arabic: "أُولَئِكَ عَلَى هُدًى مِنْ رَبِّهِمْ وَأُولَئِكَ هُمُ الْمُفْلِحُونَ" },
-    // {N100:14,surahName:"سورة البقرة",surahNo: 2, aya: 7, arabic: "إِنَّ الَّذِينَ كَفَرُوا سَوَاءٌ عَلَيْهِمْ أَأَنْذَرْتَهُمْ أَمْ لَمْ تُنْذِرْهُمْ لَا يُؤْمِنُونَ" },
-    // {N100:15,surahName:"سورة البقرة",surahNo: 2, aya: 8, arabic: "خَتَمَ اللَّهُ عَلَى قُلُوبِهِمْ وَعَلَى سَمْعِهِمْ وَعَلَى أَبْصَارِهِمْ غِشَاوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ"},
-    // {N100:16,surahName:"سورة البقرة",surahNo: 2, aya: 9, arabic: "وَمِنَ النَّاسِ مَنْ يَقُولُ آمَنَّا بِاللَّهِ وَبِالْيَوْمِ الْآخِرِ وَمَا هُمْ بِمُؤْمِنِينَ"},
-    // {N100:17,surahName:"سورة البقرة",surahNo: 2, aya: 10, arabic: "يُخَادِعُونَ اللَّهَ وَالَّذِينَ آمَنُوا وَمَا يَخْدَعُونَ إِلَّا أَنْفُسَهُمْ وَمَا يَشْعُرُونَ"},
-    // {N100:18,surahName:"سورة البقرة",surahNo: 2, aya: 11, arabic: "فِي قُلُوبِهِمْ مَرَضٌ فَزَادَهُمُ اللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌ بِمَا كَانُوا يَكْذِبُونَ"},
-    // {N100:19,surahName:"سورة البقرة",surahNo: 2, aya: 12, arabic: "وَإِذَا قِيلَ لَهُمْ لَا تُفْسِدُوا فِي الْأَرْضِ قَالُوا إِنَّمَا نَحْنُ مُصْلِحُونَ"},
-  ];
   const pageicon = { color: `#007bff`, cursor: `pointer`, fontSize: `1rem` };
   function ayaClick(surahNumber,ayaNumber) {
     setselected({surah:surahNumber,aya:ayaNumber});
@@ -162,13 +155,13 @@ function Middiv() {
               {tarjamaArray.map(function(element, i) {
                 if (selected['surah'] === element.surahNo && selected['aya'] === element.aya) 
                 return(
-                  <span key={element.aya.toString()}  onClick={()=>{ayaClick(element.surahNo,element.aya)}} id={element.aya} className="ayaTextSelected">
+                  <span key={element.aya.toString()}  onClick={()=>{ayaClick(element.surahNo,element.aya)}} style={ sizeButton.tabName === "Display Options" ? {fontSize:sizeButton.number}: {fontSize:20} } id={element.aya} className="ayaTextSelected">
                     {element.arabic}
                     <span className="ayaNumber">&nbsp;﴿{element.aya}﴾&nbsp;</span>
                   </span>
 
                  ); else return(
-                  <span key={element.aya.toString()}  onClick={()=>{ayaClick(element.surahNo,element.aya)}} id={element.aya} className="ayaText">
+                  <span key={element.aya.toString()}  onClick={()=>{ayaClick(element.surahNo,element.aya)}} style={ sizeButton.tabName === "Display Options" ? {fontSize:sizeButton.number}: {fontSize:20} } id={element.aya} className="ayaText">
                     {element.arabic}
                     <span className="ayaNumber">&nbsp;﴿{element.aya}﴾&nbsp;</span>
                   </span>
